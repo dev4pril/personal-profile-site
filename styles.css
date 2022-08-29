@@ -18,7 +18,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #1fe086;
 }
 
 /* Section Styles */
@@ -28,7 +28,7 @@ a:hover {
   background: #341e60;
   min-height: 30px;
   padding: 10px;
-  position: fixed;
+  /* position: fixed; */
   text-align: center;
 }
 .nav {
@@ -43,6 +43,9 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
+    color: white;
+}
+.nav .name a {
     color: white;
 }
 .nav li {
@@ -71,8 +74,9 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 1px solid rgb(226, 200, 121);
   transition: all .5s;
+  box-shadow: 2px 0 15px rgba(46, 5, 12, 0.195);
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
@@ -91,16 +95,15 @@ header .profile-image:hover {
 }
 
 .location {
-  background-color: rgba(46, 5, 12, 0.195);
   color: rgb(255, 255, 252);
-  font-size: 22px;
+  font-size: 18px;
+  background-color: #1f031454;
 }
 
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  /* max-width: 500px; */
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -122,14 +125,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #ffa200;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #8960da;
 }
 
 footer {
@@ -160,8 +163,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+  opacity: .8;
+  transition: all .8s;
 }
 a.twitter {
   background-image: url(images/twitter.svg);
@@ -239,4 +242,31 @@ a.social:hover {
  }
  .gallery-container p{
   text-align: center;
+ }
+
+ /* Contact Page */
+ .contact-container .card {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .contact-container img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 5px;
+ }
+
+ .contact-container ul {
+  list-style: none;
+  padding: 0;
+ }
+
+ .contact-container a {
+  color: rgb(129, 29, 131);
+ }
+
+ .contact-container a:hover{
+  color: rgb(191, 72, 234);
  }
